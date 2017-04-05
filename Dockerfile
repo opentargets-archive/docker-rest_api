@@ -42,7 +42,7 @@ COPY server.key /etc/ssl/nginx/
 
 #install swagger ui
 RUN cd /var/www &&  \
-    curl -sL https://github.com/CTTV/swagger-ui/archive/master.tar.gz | tar xz && \
+    curl -sL https://github.com/opentargets/swagger-ui/archive/master.tar.gz | tar xz && \
     mv swagger-ui-master swagger-ui
 
 #declare app port
