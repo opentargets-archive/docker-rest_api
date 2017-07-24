@@ -21,3 +21,5 @@ RUN apt-get update && \
 RUN wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py && \
   python get-pip.py
 
+CMD ["/bin/bash"]
+
