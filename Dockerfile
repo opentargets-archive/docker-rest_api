@@ -15,7 +15,8 @@ RUN apt-get update && \
     openssh-server \
     git \
     sqlite3 \
-    nginx-extras
+    nginx-extras \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py && \
   python get-pip.py
